@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import Project from "./Project.jsx";
 import projects from "./data/projects.js";
 
 const skills = [
