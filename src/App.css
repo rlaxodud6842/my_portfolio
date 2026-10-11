@@ -115,6 +115,8 @@ button:focus-visible {
    4. Shared layout
 ========================= */
 
+
+
 .hero,
 .section,
 .contact-section,
@@ -123,6 +125,7 @@ button:focus-visible {
   max-width: var(--content-width);
   margin-right: auto;
   margin-left: auto;
+
 }
 
 .section {
@@ -257,6 +260,7 @@ button:focus-visible {
   line-height: 1.4;
   letter-spacing: -1.5px;
   word-break: keep-all;
+
 }
 
 .section-heading>p {
@@ -467,7 +471,13 @@ button:focus-visible {
    10. Contact
 ========================= */
 
+.contact-parent-section {
+  border-top: 1px solid var(--border);
+}
+
 .contact-section {
+
+  margin-top: 80px;
   margin-bottom: 80px;
   padding: 48px 40px;
   border-radius: var(--radius);
@@ -634,6 +644,7 @@ button:focus-visible {
   .contact-section {
     margin-bottom: 56px;
     padding: 30px 22px;
+
   }
 
   .footer {
@@ -1055,5 +1066,105 @@ button:focus-visible {
   .project-modal-content {
     overflow: visible;
     padding: 28px 24px 32px;
+  }
+}
+
+/* Contact 레이아웃 */
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
+
+}
+
+.contact-content {
+  flex: 1;
+  min-width: 0;
+
+}
+
+.contact-content h2 {
+  text-align: left;
+}
+
+.contact-content>p {
+  text-align: left;
+}
+
+.contact-info {
+  margin: 24px 0;
+}
+
+.contact-info p {
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+/* 우측 프로필 */
+.contact-profile {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-right: 3%;
+}
+
+.contact-profile-ring {
+  width: clamp(180px, 24vw, 280px);
+  aspect-ratio: 1 / 1;
+  padding: 7px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 130, 55, 0.65);
+  background: rgba(255, 130, 55, 0.08);
+  box-shadow: 0 0 40px rgba(255, 110, 30, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-profile-ring:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 55px rgba(255, 110, 30, 0.22);
+}
+
+.contact-profile-ring img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.contact-profile-caption {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: #999;
+  white-space: nowrap;
+}
+
+/* 모바일 */
+@media (max-width: 640px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+  }
+
+  .contact-content {
+    width: 100%;
+  }
+
+  .contact-profile {
+    align-self: center;
+    margin-right: 0;
+  }
+
+  .contact-profile-ring {
+    width: clamp(180px, 55vw, 240px);
   }
 }

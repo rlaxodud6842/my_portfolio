@@ -37,8 +37,8 @@ const projects = [
         result:
             "완성한 서비스를 SNS를 통해 공유했으며, 약 800명이 사용했습니다.",
 
-        link: 'https://sugang.mydu.duckdns.org/',
-        linkLabel: "https://sugang.mydu.duckdns.org/",
+        link: 'https://github.com/rlaxodud6842/sugang_practice_new',
+        linkLabel: "GitHub에서 보기",
     },
     {
         id: 3,
@@ -62,6 +62,29 @@ const projects = [
 
         link: 'https://github.com/rlaxodud6842/EasyReporter',
         linkLabel: "GitHub에서 보기",
+    },
+    {
+        id: 4,
+        category: "WEB DEVELOPMENT",
+        name: "개인 포트폴리오 웹사이트 개발 및 배포",
+        description:
+            "React 기반으로 프로젝트와 기술 역량을 소개하는 인터랙티브 포트폴리오 웹사이트",
+        details:
+            "React와 Vite를 활용해 포트폴리오 웹사이트를 개발하고, CSS 애니메이션과 프로젝트 상세 모달을 구현했습니다. GitHub로 소스 코드를 관리하고 Vercel을 통한 웹 배포를 진행했습니다.",
+        stack: ["React", "JavaScript", "CSS", "Vite", "GitHub", "Vercel"],
+        image: "/4.png",
+
+        problem:
+            "여러 개발 프로젝트와 기술 역량을 하나의 공간에서 효과적으로 보여주고, 다른 사람이 쉽게 확인할 수 있는 포트폴리오가 필요했습니다.",
+
+        approach:
+            "React 기반으로 프로젝트 목록과 상세 모달을 구현하고, CSS 애니메이션과 움직이는 배경을 적용해 사용자 경험을 개선했습니다. GitHub를 통해 소스 코드를 관리하고 Vercel을 활용한 배포 환경을 구성했습니다.",
+
+        result:
+            "프로젝트별 소개와 기술 스택을 확인할 수 있는 개인 포트폴리오 웹사이트를 구현했습니다. GitHub와 Vercel을 활용해 코드 관리 및 웹 배포 과정을 경험했습니다.",
+
+        link: "",
+        linkLabel: "",
     }
 
 ];
