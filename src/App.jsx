@@ -301,56 +301,59 @@ function App() {
           )}
 
         </section>
-        <section className="contact-parent-section">
-          <section className="contact-section" id="contact">
-            <div className="contact-content">
-              <span className="eyebrow">CONTACT</span>
 
-              <h2>
-                함께 문제를 해결할
-                <br />
-                기회를 기다립니다.
-              </h2>
+        <Reveal delay={0.2}>
+          <section className="contact-parent-section">
+            <section className="contact-section" id="contact">
+              <div className="contact-content">
+                <span className="eyebrow">CONTACT</span>
 
-              <p>
-                프로젝트나 기술에 관해 이야기하고 싶다면
-                <br />
-                편하게 연락해 주세요.
-              </p>
+                <h2>
+                  함께 문제를 해결할
+                  <br />
+                  기회를 기다립니다.
+                </h2>
 
-              <div className="contact-info">
                 <p>
-                  TEL : 010-2583-2393 <br />
-                  E-MAIL : rlaxodud6842@naver.com
+                  프로젝트나 기술에 관해 이야기하고 싶다면
+                  <br />
+                  편하게 연락해 주세요.
                 </p>
+
+                <div className="contact-info">
+                  <p>
+                    TEL : 010-2583-2393 <br />
+                    E-MAIL : rlaxodud6842@naver.com
+                  </p>
+                </div>
+
+                <a
+                  className="button-primary"
+                  href="https://github.com/rlaxodud6842"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub 방문하기 ↗
+                </a>
               </div>
 
-              <a
-                className="button-primary"
-                href="https://github.com/rlaxodud6842"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub 방문하기 ↗
-              </a>
-            </div>
+              <div className="contact-profile">
+                <div className="contact-profile-ring">
+                  <img
+                    src="/me.png"
+                    alt="프로필 사진"
+                    loading="lazy"
+                  />
+                </div>
 
-            <div className="contact-profile">
-              <div className="contact-profile-ring">
-                <img
-                  src="/me.png"
-                  alt="프로필 사진"
-                  loading="lazy"
-                />
+                <span className="contact-profile-caption">
+                  반갑습니다.
+                </span>
               </div>
+            </section>
 
-              <span className="contact-profile-caption">
-                반갑습니다.
-              </span>
-            </div>
           </section>
-        </section>
-
+        </Reveal>
 
       </main >
 
